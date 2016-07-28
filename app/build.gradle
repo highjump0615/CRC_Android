@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.camerarental.crc"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    //compile 'com.github.traex.calendarlistview:library:1.2.3'
+    //compile 'com.daimajia.swipelayout:library:1.1.7'
+    compile project(':SwipeLayout')
+    compile project(':PullToRefresh')
+    compile project(':CalendarListView')
+}
+
+project.ext.set("archivesBaseName", "Camera Rental");

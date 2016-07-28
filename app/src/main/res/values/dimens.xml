@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tab bar -->
+    <dimen name="tab_bar_height">48dp</dimen>
+    <dimen name="tab_bar_image_height">24dp</dimen>
+    <dimen name="tab_button_padding">9dp</dimen>
+
+</resources>

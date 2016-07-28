@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calendar_back_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/dates_required"
+        android:textColor="@color/gray"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_day_of_week1"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sun"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week2"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mon"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week3"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tue"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week4"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Wed"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week5"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thu"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week6"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Fri"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_day_of_week7"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sat"
+            android:textColor="@color/tint_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.andexert.calendarlistview.library.DayPickerView xmlns:calendar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pickerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        calendar:colorMonthName="@color/tint_color"
+        calendar:colorMonthNameBackground="@android:color/transparent"
+        calendar:colorCurrentDayBackground="@android:color/white"
+        calendar:colorCurrentDay="@color/dark_gray"
+        calendar:colorNormalDay="@color/dark_gray"
+        calendar:colorSelectedDayBackground="@color/chopped_text_color"
+        calendar:colorSelectedDayText="@android:color/white"
+        calendar:colorSelectedBeginDayBackground="@color/tint_color"
+        calendar:colorSelectedBeginDay="@android:color/white"
+        calendar:colorPreviousDay="@color/gray"
+        calendar:colorPreviousDayBackground="@color/disable_color"
+        calendar:currentDaySelected="false"
+        calendar:drawRoundRect="true"
+        calendar:enablePreviousDay="false" />
+
+</LinearLayout>

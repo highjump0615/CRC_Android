@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tint_color">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/camera_rental"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/image_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/search"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.daimajia.swipe.SwipeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        app:show_mode="pull_out">
+
+        <!-- Filter View -->
+        <RelativeLayout
+            android:id="@+id/layout_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:tag="bottom" />
+
+        <!-- Main Container -->
+        <LinearLayout
+            android:id="@+id/layout_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:tag="surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/image_swipe_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:adjustViewBounds="true"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@color/swipe_background"
+                    android:src="@drawable/down"
+                    android:tag="Hover" />
+
+            </LinearLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/list_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="1dp"
+                android:requiresFadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="@android:color/transparent"
+                ptr:ptrMode="pullDownFromTop" />
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When selected -->
+    <item android:color="@color/tint_color" android:state_selected="true" />
+    <!-- When not selected-->
+    <item android:color="@color/tab_normal_text_color" />
+
+</selector>

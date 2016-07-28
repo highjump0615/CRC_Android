@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tint_color">#F7931E</color>
+    <color name="divider_color">#33999999</color>
+
+    <color name="dark_gray">#333333</color>
+    <color name="gray">#999999</color>
+    <color name="light_gray">#B9B9B9</color>
+    <color name="line_color">#33999999</color>
+
+    <color name="price_text_color">#cc999999</color>
+    <color name="chopped_text_color">#99f7931e</color>
+
+    <color name="badge_color">#f43530</color>
+
+    <color name="tab_bar_background">#f6f6f6</color>
+    <color name="tab_normal_text_color">#808080</color>
+
+    <color name="swipe_background">#fabe78</color>
+
+    <color name="button_bar_color">#fafafa</color>
+
+    <!-- Calendar Colors -->
+    <color name="fore_color">@color/tint_color</color>
+    <color name="select_color">@color/chopped_text_color</color>
+    <color name="calendar_back_color">#f6f6f6</color>
+    <color name="disable_color">#e6e6e6</color>
+
+</resources>

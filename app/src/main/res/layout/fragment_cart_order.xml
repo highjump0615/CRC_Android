@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/blue_cursor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/email_address"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/blue_cursor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/edit_contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/contact_number"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/blue_cursor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/edit_passport_no"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="@string/passport_no"
+        android:imeOptions="actionNext"
+        android:inputType="textNoSuggestions"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/blue_cursor"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/edit_comments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="left|top"
+        android:hint="@string/comments"
+        android:imeOptions="actionDone"
+        android:inputType="textImeMultiLine"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/light_gray"
+        android:textCursorDrawable="@drawable/blue_cursor"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:text="@string/notice"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

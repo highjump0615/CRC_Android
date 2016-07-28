@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/image_photo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:adjustViewBounds="true"
+        android:layout_margin="12dp" />
+
+    <!-- This initially-hidden ImageView will hold the expanded/zoomed version of the
+             images above. Without transformations applied, it takes up the entire screen.
+             To achieve the "zoom" animation, this view's bounds are animated from the
+             bounds of the thumbnail buttons above, to its final laid-out bounds. The implementation
+             of this animation is in the ZoomActivity class. -->
+    <ImageView
+        android:id="@+id/image_expand"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text_chopped"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_price"
+        android:layout_alignTop="@+id/layout_price"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:layout_toLeftOf="@+id/layout_price"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_price"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/price_text_color"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/per_day"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_chopped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_price"
+        android:layout_alignParentTop="true"
+        android:background="@color/chopped_text_color"
+        android:gravity="center"
+        android:text="@string/chopped"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/text_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/image_expand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/tint_color"
+        android:gravity="center"
+        android:text="@string/add_to_cart"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/text_add_to_cart" />
+
+</RelativeLayout>
